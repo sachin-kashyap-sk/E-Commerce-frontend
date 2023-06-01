@@ -1,0 +1,13 @@
+.appBar {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+@media (max-width: 575.98px) {
+  .appBar {
+    height: auto;
+  }
+}

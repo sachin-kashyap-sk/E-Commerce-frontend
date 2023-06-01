@@ -1,0 +1,13 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.offer {
+  display: flex;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}

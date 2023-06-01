@@ -1,0 +1,41 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4%;
+}
+
+.styledLabel {
+  display: flex;
+  flex-direction: row;
+}
+
+.shopMain {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
+  justify-content: space-around;
+  padding-bottom: 5%;
+}
+
+.text {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.cardContainer {
+  height: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .shopMain {
+    flex-direction: column;
+    padding-top: 10%;
+    /* padding-bottom: 5%; */
+    /* padding-top: 10%; */
+  }
+  .cardMain {
+    padding-top: 5%;
+  }
+}

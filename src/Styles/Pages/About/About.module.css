@@ -1,0 +1,94 @@
+.firstContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #e8f6ef;
+}
+.imgContainer {
+  padding-bottom: 5%;
+}
+.innerFirst {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 2%;
+}
+.innerSec {
+  display: flex;
+  width: 50%;
+}
+
+.firstText {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.secText {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.secContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  padding-top: 5%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width: 30%;
+  height: auto;
+  padding: 3%;
+  background-color: #e8f6ef;
+  margin-bottom: 3%;
+}
+
+.firstTitle {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.secTitle {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.thirdTitle {
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 575.98px) {
+  .cardContainer {
+    width: 100%;
+  }
+  .card {
+    width: auto;
+  }
+  .secContainer {
+    width: 100%;
+  }
+}

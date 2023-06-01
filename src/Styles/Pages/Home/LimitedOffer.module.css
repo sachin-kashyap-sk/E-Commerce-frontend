@@ -1,0 +1,69 @@
+.card {
+  /* width: 90%; */
+  height: 40rem;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.secContainer {
+  display: flex;
+  width: 50%;
+}
+
+.limitedContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5%;
+  background-color: #e8f6ef;
+}
+
+.offerText {
+  font-size: 35px;
+  font-weight: 700;
+  font-family: sans-serif;
+  padding-top: 20%;
+}
+
+.splEdition {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding-top: 10%;
+}
+
+.buyText {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding-top: 10%;
+}
+
+.btn {
+  padding-top: 5%;
+}
+
+@media (max-width: 575.98px) {
+  .card {
+    height: auto;
+  }
+  .offerText {
+    font-size: 20px;
+  }
+  .splEdition {
+    font-size: 20px;
+  }
+  .buyText {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,29 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(270deg, #57c5b6, #1A5F7A);
+}
+
+.container {
+  width: 35%;
+  height: 60vh;
+  background-color: #ffffff;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+.login {
+  font-size: 30px;
+  font-weight: 500;
+  /* color: linear-gradient(270deg, #4b6cb7, #182848); */
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 90%;
+    height: 40vh;
+  }
+}

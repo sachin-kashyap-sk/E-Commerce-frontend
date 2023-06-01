@@ -1,0 +1,41 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
+  background-color: #e8f6ef;
+  justify-content: space-around;
+  max-width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+}
+
+.card {
+  padding-bottom: 3%;
+}
+.cartInner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  font-size: 17px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.gender {
+  font-size: 15px;
+  font-weight: 550;
+  font-family: sans-serif;
+}
+.price {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  color: #000000;
+}

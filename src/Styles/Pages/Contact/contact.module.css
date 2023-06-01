@@ -1,0 +1,147 @@
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+  padding-top: 5%;
+}
+
+.firstTitle {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.secTitle {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.secContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 5%;
+  /* background-color: red; */
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width: 20%;
+  height: auto;
+  padding: 3%;
+  background-color: #ffffff;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.bottomFirstMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+.bottomMain {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding-top: 5%;
+}
+
+.innerFirst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+  width: 45%;
+  /* background-color: ; */
+  /* background-color: #e8f6ef; */
+}
+
+.innerSec {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  background-color: #ffffff;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 2%;
+}
+
+.input {
+  padding-top: 4%;
+}
+
+.strangeText {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #000000;
+}
+
+.listenText {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.mainMsg {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #000000;
+}
+
+.department {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding-top: 2%;
+}
+
+.contact {
+  /* font-size: 20px; */
+  font-family: sans-serif;
+  font-weight: 700;
+  color: slateblue;
+  padding-top: 2%;
+}
+
+@media (max-width: 575.98px) {
+  .cardContainer {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+  .bottomFirstMain {
+    flex-direction: column;
+  }
+  .bottomMain {
+    flex-direction: column;
+  }
+  .innerFirst {
+    width: 100%;
+  }
+  .innerSec {
+    width: 100%;
+    height: auto;
+  }
+}
