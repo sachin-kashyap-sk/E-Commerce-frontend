@@ -13,7 +13,7 @@ const Login = () => {
 
   useEffect(() => {
     if (!userInfo) {
-      navigate("/login");
+      navigate("/Login");
     } else if (!loading && userInfo) navigate("/");
   }, [userInfo, loading, navigate]);
 

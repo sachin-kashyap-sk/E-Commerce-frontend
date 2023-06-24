@@ -11,7 +11,7 @@ const accessToken = localStorage.getItem("accessToken")
 
 const initialState = {
   loading: false,
-  userInfo: null,
+  userInfo: localStorage.getItem("isAdmin") || "false",
   accessToken,
   error: null,
   success: false,
@@ -53,7 +53,7 @@ const authSlice = createSlice({
     },
     [userLogin.fulfilled]: (state, { payload }) => {
       state.loading = false;
-      state.userInfo = payload;
+      state.userInfo = payload.isAdmin.toString();
       state.success = true;
       state.accessToken = payload.accessToken;
     },

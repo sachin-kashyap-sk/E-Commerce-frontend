@@ -19,6 +19,8 @@ import ContactHeader from "../ContactUs/ContactHeaderSlice";
 import ContactQueries from "../ContactUs/ContactQueriesSlice";
 import ContactComplain from "../ContactUs/ContactComplainSlice";
 import ContactUserMessage from "../ContactUs/ContactUserMessageSlice";
+import DescriptionList from "../Description/DescriptionSecSlice";
+import ProductDescription from "../Description/DescriptionThirdSlice";
 export const Store = configureStore({
   reducer: {
     Home: Home,
@@ -41,5 +43,7 @@ export const Store = configureStore({
     ContactQueries: ContactQueries,
     ContactComplain: ContactComplain,
     ContactUserMessage: ContactUserMessage,
+    DescriptionList: DescriptionList,
+    ProductDescription: ProductDescription,
   },
 });

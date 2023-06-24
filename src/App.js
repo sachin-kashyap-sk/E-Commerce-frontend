@@ -10,6 +10,9 @@ import ContactUs from "./Components/Pages/ContactUs/ContactUs";
 import Login from "./Components/Pages/Login/Login";
 import ProtectedRoute from "./Components/utils/ProtectedRoute";
 import Register from "./Components/Pages/Register/Register";
+import Description from "./Components/Pages/Descriptions/Description";
+import MenTopDes from "./Components/Pages/Mens/MenDescription/MenTopDes";
+import WomenTopDes from "./Components/Pages/Women/WomenDescription/WomenTopDes";
 function App() {
   return (
     <div>
@@ -64,6 +67,33 @@ function App() {
           element={
             <ProtectedRoute>
               <ContactUs />
+            </ProtectedRoute>
+          }
+        ></Route>
+
+        <Route
+          path="/description/:id"
+          element={
+            <ProtectedRoute>
+              <Description />
+            </ProtectedRoute>
+          }
+        ></Route>
+
+        <Route
+          path="/descriptionMen/:id"
+          element={
+            <ProtectedRoute>
+              <MenTopDes />
+            </ProtectedRoute>
+          }
+        ></Route>
+
+        <Route
+          path="/descriptionWomen/:id"
+          element={
+            <ProtectedRoute>
+              <WomenTopDes />
             </ProtectedRoute>
           }
         ></Route>

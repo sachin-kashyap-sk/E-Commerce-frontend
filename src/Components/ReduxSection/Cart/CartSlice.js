@@ -22,6 +22,7 @@ const CartSlice = createSlice({
       state.products.push(action.payload);
       state.totalItem = state.totalItem + 1;
     },
+    
 
     removeFromCart: (state, action) => {
       state.products = state.products.filter(

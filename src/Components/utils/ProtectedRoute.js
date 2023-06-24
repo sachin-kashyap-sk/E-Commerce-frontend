@@ -10,8 +10,7 @@ const ProtectedRoute = (props) => {
     if (!userToken || userToken === "undefined") {
       navigate("/Login");
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [userToken, navigate]);
 
   return <React.Fragment>{!!userToken ? props.children : null}</React.Fragment>;
 };

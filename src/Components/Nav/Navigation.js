@@ -17,12 +17,12 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
-  TextField,
 } from "@mui/material";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { resetState } from "../ReduxSection/Auth/AuthSlice";
 import classes from "../../Styles/Nav/Nav.module.css";
+import HomeSearchBar from "../Pages/Home/HomeSearchBar";
 const drawerWidth = 300;
 
 const navItems = [
@@ -55,12 +55,12 @@ const navItems = [
   },
 ];
 
-function DrawerAppBar(props) {
+function DrawerAppBar(props, result) {
+  const dispatch = useDispatch();
   const { products } = useSelector((state) => state.cart);
   const navigation = useNavigate();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const dispatch = useDispatch();
 
   const TotalItem = () => {
     let temp = 0;
@@ -137,12 +137,9 @@ function DrawerAppBar(props) {
                 </Button>
               ))}
             </Box>
-            <Box>
-              <TextField
-                id="outlined-basic"
-                label="Search"
-                variant="outlined"
-              />
+
+            <Box sx={{ width: "50%" }}>
+              <HomeSearchBar />
             </Box>
             <Badge color="info" overlap="circular" badgeContent={TotalItem()}>
               <img onClick={() => navigation("/cart")} src={cart} alt="cart" />

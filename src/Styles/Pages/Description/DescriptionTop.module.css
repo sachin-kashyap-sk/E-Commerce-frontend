@@ -1,0 +1,80 @@
+.firstContainer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2%;
+}
+
+.secContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.brand {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.price {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #242424;
+}
+
+.shortDes {
+  font-size: 18px;
+  font-family: sans-serif;
+  padding-top: 1%;
+}
+
+.offer {
+  font-size: 20px;
+  font-family: sans-serif;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.desImage {
+  width: 600;
+  height: auto;
+}
+
+.firstText {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding-top: 3%;
+}
+
+.shortDesContainer {
+  padding-bottom: 3%;
+}
+
+.unorderedList {
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+@media (max-width: 575.98px) {
+  .firstContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .secContainer {
+    width: 100%;
+  }
+
+  .desImage {
+    width: auto;
+    height: auto;
+  }
+}

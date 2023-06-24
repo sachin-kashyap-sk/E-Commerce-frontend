@@ -6,8 +6,15 @@
   box-shadow: none;
 }
 
+.search {
+  padding: 2%;
+  width: 40%;
+}
 @media (max-width: 575.98px) {
   .appBar {
     height: auto;
+  }
+  .search {
+    width: auto;
   }
 }

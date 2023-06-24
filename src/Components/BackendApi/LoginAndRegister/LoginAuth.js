@@ -35,6 +35,7 @@ export const userLogin = createAsyncThunk(
         headers: {
           "Content-Type": "application/json",
           accessToken: localStorage.getItem("accessToken"),
+          isAdmin: localStorage.getItem("isAdmin"),
         },
         config: { withCredentials: true },
       };
@@ -46,6 +47,7 @@ export const userLogin = createAsyncThunk(
       );
       // store user's token in local storage
       localStorage.setItem("accessToken", data.accessToken);
+      localStorage.setItem("isAdmin", data.isAdmin);
       return data;
     } catch (error) {
       if (error.response && error.response.data.message) {
